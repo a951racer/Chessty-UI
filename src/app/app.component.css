@@ -1,0 +1,185 @@
+.board {
+  /* border: 1px solid black; */
+  width: 816px;  /* width x 8 + 16 */
+  float: left;
+}
+
+.boardRow {
+  
+}
+
+.space {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.space:hover {
+  border: 1px solid red;
+}
+
+.selected {
+  border: 1px solid red;
+}
+
+.unselected {
+  border: 1px solid black;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: gray;
+}
+
+
+
+/*** Pieces ********************/
+
+.empty {
+  
+}
+
+/*** Black Pieces *********/
+.br {
+  background-image: url(../assets/img/pieces/black_rook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.bn {
+  background-image: url(../assets/img/pieces/black_knight.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.bb {
+  background-image: url(../assets/img/pieces/black_bishop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.bq {
+  background-image: url(../assets/img/pieces/black_queen.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.bk {
+  background-image: url(../assets/img/pieces/black_king.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.bp {
+  background-image: url(../assets/img/pieces/black_pawn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+/*** White Pieces *********/
+.wr {
+  background-image: url(../assets/img/pieces/white_rook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.wn {
+  background-image: url(../assets/img/pieces/white_knight.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.wb {
+  background-image: url(../assets/img/pieces/white_bishop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.wq {
+  background-image: url(../assets/img/pieces/white_queen.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.wk {
+  background-image: url(../assets/img/pieces/white_king.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.wp {
+  background-image: url(../assets/img/pieces/white_pawn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+
+
+.controlBar {
+  width: 200px;
+  float: right;
+  background-color: antiquewhite;
+  margin-bottom: 30px;
+}
+
+.controlButton {
+  background-color: chocolate;
+  color: white;
+  margin: 10px;
+  padding: 2px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.statusBar {
+  font-family: sans-serif;
+  width: 250px;
+  float: right;
+  background-color: antiquewhite;
+}
+
+.statusBarTitle {
+  font-weight: bold;
+  text-align: center;
+}
+
+.statusBarRow {
+  margin: 10px;
+  padding: 2px;
+}
+
+.statusBarLabel {
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+
+.statusBarStatus {
+  
+}

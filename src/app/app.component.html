@@ -1,20 +1,123 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- The chess board -->
+<div [ngClass]="'board'">
+  <div [ngClass]="'boardRow'" id="row1">
+    <div [ngClass]="'space white unselected'" id="a8" (click)="onClick('a8')"></div>
+    <div [ngClass]="'space black unselected'" id="b8" (click)="onClick('b8')"></div>
+    <div [ngClass]="'space white unselected'" id="c8" (click)="onClick('c8')"></div>
+    <div [ngClass]="'space black unselected'" id="d8" (click)="onClick('d8')"></div>
+    <div [ngClass]="'space white unselected'" id="e8" (click)="onClick('e8')"></div>
+    <div [ngClass]="'space black unselected'" id="f8" (click)="onClick('f8')"></div>
+    <div [ngClass]="'space white unselected'" id="g8" (click)="onClick('g8')"></div>
+    <div [ngClass]="'space black unselected'" id="h8" (click)="onClick('h8')"></div>
+  </div>
+  <div [ngClass]="'boardRow'" id="row2">
+    <div [ngClass]="'space black unselected'" id="a7" (click)="onClick('a7')"></div>
+    <div [ngClass]="'space white unselected'" id="b7" (click)="onClick('b7')"></div>
+    <div [ngClass]="'space black unselected'" id="c7" (click)="onClick('c7')"></div>
+    <div [ngClass]="'space white unselected'" id="d7" (click)="onClick('d7')"></div>
+    <div [ngClass]="'space black unselected'" id="e7" (click)="onClick('e7')"></div>
+    <div [ngClass]="'space white unselected'" id="f7" (click)="onClick('f7')"></div>
+    <div [ngClass]="'space black unselected'" id="g7" (click)="onClick('g7')"></div>
+    <div [ngClass]="'space white unselected'" id="h7" (click)="onClick('h7')"></div>
+  </div>
 
+  <div [ngClass]="'boardRow'" id="row3">
+    <div [ngClass]="'space white unselected'" id="a6" (click)="onClick('a6')"></div>
+    <div [ngClass]="'space black unselected'" id="b6" (click)="onClick('b6')"></div>
+    <div [ngClass]="'space white unselected'" id="c6" (click)="onClick('c6')"></div>
+    <div [ngClass]="'space black unselected'" id="d6" (click)="onClick('d6')"></div>
+    <div [ngClass]="'space white unselected'" id="e6" (click)="onClick('e6')"></div>
+    <div [ngClass]="'space black unselected'" id="f6" (click)="onClick('f6')"></div>
+    <div [ngClass]="'space white unselected'" id="g6" (click)="onClick('g6')"></div>
+    <div [ngClass]="'space black unselected'" id="h6" (click)="onClick('h6')"></div>
+  </div>
+  <div [ngClass]="'boardRow'" id="row4">
+    <div [ngClass]="'space black unselected'" id="a5" (click)="onClick('a5')"></div>
+    <div [ngClass]="'space white unselected'" id="b5" (click)="onClick('b5')"></div>
+    <div [ngClass]="'space black unselected'" id="c5" (click)="onClick('c5')"></div>
+    <div [ngClass]="'space white unselected'" id="d5" (click)="onClick('d5')"></div>
+    <div [ngClass]="'space black unselected'" id="e5" (click)="onClick('e5')"></div>
+    <div [ngClass]="'space white unselected'" id="f5" (click)="onClick('f5')"></div>
+    <div [ngClass]="'space black unselectedv'" id="g5" (click)="onClick('g5')"></div>
+    <div [ngClass]="'space white unselected'" id="h5" (click)="onClick('h5')"></div>
+  </div>
+  <div [ngClass]="'boardRow'" id="row5">
+    <div [ngClass]="'space white unselected'" id="a4" (click)="onClick('a4')"></div>
+    <div [ngClass]="'space black unselected'" id="b4" (click)="onClick('b4')"></div>
+    <div [ngClass]="'space white unselected'" id="c4" (click)="onClick('c4')"></div>
+    <div [ngClass]="'space black unselected'" id="d4" (click)="onClick('d4')"></div>
+    <div [ngClass]="'space white unselected'" id="e4" (click)="onClick('e4')"></div>
+    <div [ngClass]="'space black unselected'" id="f4" (click)="onClick('f4')"></div>
+    <div [ngClass]="'space white unselected'" id="g4" (click)="onClick('g4')"></div>
+    <div [ngClass]="'space black unselected'" id="h4" (click)="onClick('h4')"></div>
+  </div>
+  <div [ngClass]="'boardRow'" id="row6">
+    <div [ngClass]="'space black unselected'" id="a3" (click)="onClick('a3')"></div>
+    <div [ngClass]="'space white unselected'" id="b3" (click)="onClick('b3')"></div>
+    <div [ngClass]="'space black unselected'" id="c3" (click)="onClick('c3')"></div>
+    <div [ngClass]="'space white unselected'" id="d3" (click)="onClick('d3')"></div>
+    <div [ngClass]="'space black unselected'" id="e3" (click)="onClick('e3')"></div>
+    <div [ngClass]="'space white unselected'" id="f3" (click)="onClick('f3')"></div>
+    <div [ngClass]="'space black unselected'" id="g3" (click)="onClick('g3')"></div>
+    <div [ngClass]="'space white unselected'" id="h3" (click)="onClick('h3')"></div>
+  </div>
+  <div [ngClass]="'boardRow'" id="row7">
+    <div [ngClass]="'space white unselected'" id="a2" (click)="onClick('a2')"></div>
+    <div [ngClass]="'space black unselected'" id="b2" (click)="onClick('b2')"></div>
+    <div [ngClass]="'space white unselected'" id="c2" (click)="onClick('c2')"></div>
+    <div [ngClass]="'space black unselected'" id="d2" (click)="onClick('d2')"></div>
+    <div [ngClass]="'space white unselected'" id="e2" (click)="onClick('e2')"></div>
+    <div [ngClass]="'space black unselected'" id="f2" (click)="onClick('f2')"></div>
+    <div [ngClass]="'space white unselected'" id="g2" (click)="onClick('g2')"></div>
+    <div [ngClass]="'space black unselected'" id="h2" (click)="onClick('h2')"></div>
+  </div>
+  <div [ngClass]="'boardRow'" id="row8">
+    <div [ngClass]="'space black unselected'" id="a1" (click)="onClick('a1')"></div>
+    <div [ngClass]="'space white unselected'" id="b1" (click)="onClick('b1')"></div>
+    <div [ngClass]="'space black unselected'" id="c1" (click)="onClick('c1')"></div>
+    <div [ngClass]="'space white unselected'" id="d1" (click)="onClick('d1')"></div>
+    <div [ngClass]="'space black unselected'" id="e1" (click)="onClick('e1')"></div>
+    <div [ngClass]="'space white unselected'" id="f1" (click)="onClick('f1')"></div>
+    <div [ngClass]="'space black unselected'" id="g1" (click)="onClick('g1')"></div>
+    <div [ngClass]="'space white unselected'" id="h1" (click)="onClick('h1')"></div>
+  </div>
+</div>
+
+<!-- The game control buttons -->
+<div [ngClass]="'controlBar'">
+  <div [ngClass]="'controlButton'" (click)="onControlClick('reset')">New Game</div>
+  <div [ngClass]="'controlButton'" (click)="onControlClick('flip')">Flip</div>
+</div>
+
+<!-- Game Status Indicators -->
+<div [ngClass]="'statusBar'" *ngIf="game">
+  <div [ngClass]="'statusBarTitle statusBarRow'">Game Status</div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">Turn:</span>
+    <span>{{game.turn}}</span>
+  </div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">Checkmate:</span>
+    <span>{{game.inCheckMate}}</span>
+  </div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">In check:</span>
+    <span>{{game.inCheck}}</span>
+  </div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">Draw:</span>
+    <span>{{game.inDraw}}</span>
+  </div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">Stalemate:</span>
+    <span>{{game.inStaleMate}}</span>
+  </div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">Three-fold Repetition:</span>
+    <span>{{game.inThreeFoldRep}}</span>
+  </div>
+  <div [ngClass]="'statusBarRow'">
+    <span [ngClass]="'statusBarLabel'">Insufficient Material:</span>
+    <span>{{game.insufficient}}</span>
+  </div>
+</div>
